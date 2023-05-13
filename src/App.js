@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import ReactRouterRoute from './react-router/react-router-route';
-import HistoryAPIRoute from './react-router/historyAPIRoute';
-import OldFashionRoute from './react-router/oldRoute';
+import Routing from './routing/react-router/router';
+//import ReactRouterRoute from './routing/react-router-route';
+//import HistoryAPIRoute from './routing/historyAPIRoute';
+//import OldFashionRoute from './routing/oldRoute';
+
 
 const App = () => (
-  <div>
-    Routing
-    <ReactRouterRoute />    
+  <div className='App'>
+    
+    <Routing />    
   </div>
 );
 

@@ -22,9 +22,9 @@ class ReactRouterRoute extends React.Component {
           </li>
         </ul>
         <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/blog-posts" component={BlogPosts} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog-posts" element={<BlogPosts />} />
         </Routes>
       </Router>
     );
