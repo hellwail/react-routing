@@ -1,3 +1,13 @@
 .active{
     color: green;
 }
+
+.links{
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.route{
+    font-size: 30px;
+}

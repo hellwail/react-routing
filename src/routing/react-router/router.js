@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink, Navigate} from 'react-router-dom';
 import './style.css'
 
 const Home = () => <div>Home</div>;
@@ -12,7 +12,7 @@ class Routing extends React.Component {
     return (
       <Router>
         
-        <ul>
+        <ul className='links'>
           <li>
             <NavLink to="/" isActive = {() => true}>Home</NavLink>
           </li>
@@ -25,6 +25,7 @@ class Routing extends React.Component {
         </ul>
         <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/about" element={<Navigate to ="/blog-posts"/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/blog-posts" element={<BlogPosts />} />
         <Route path='*' element ={<NotFound />}/>
